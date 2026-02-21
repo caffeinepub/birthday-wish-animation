@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Interactive romantic birthday animation for girlfriend's 18th birthday with kawaii bear characters, pastel pink and lavender theme, enhanced question sequence with unique bear reactions, animated giftcards section, flower bouquet finale, and personal photo ending",
+  "architectural_notes": [
+    "Instagram reel style animation format",
+    "Kawaii/cute aesthetic with cinematic lighting",
+    "Smooth motion graphics with dreamy, magical romantic vibe",
+    "Kawaii bear characters (white and brown) as main animated elements with unique reaction animations",
+    "Giftcards section appears after question sequence with slide-in animations",
+    "Flower bouquet finale includes gift box opening with blooming animation",
+    "Personal photo ending as final scene with overlay text"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Kawaii white bear character with round body, dot eyes, and soft expression throwing hearts animation frame (kawaii-white-bear-hearts.dim_400x400.png)\n- Kawaii white bear character blushing with pink cheeks and shy expression (kawaii-white-bear-blush.dim_400x400.png)\n- Kawaii white bear character spinning in a circle surrounded by floating hearts (kawaii-white-bear-spin.dim_400x400.png)\n- Kawaii white bear character laughing with open mouth and bouncing motion (kawaii-white-bear-laugh.dim_400x400.png)\n- Kawaii white bear character hugging a large pink or lavender heart with both arms (kawaii-white-bear-hug-heart.dim_400x400.png)\n- Kawaii brown bear character with same style as white bear for additional scenes (kawaii-brown-bear.dim_400x400.png)\n- Pastel pink gift card with decorative ribbon and small teddy bear stamp, labeled 'Unlimited hugs card 🤍' (giftcard-hugs.dim_600x400.png)\n- Pastel lavender gift card with ribbon and bear stamp, labeled 'One lifetime annoyance pass 😚' (giftcard-annoyance.dim_600x400.png)\n- Pastel blue gift card with moon decoration, ribbon and bear stamp, labeled 'Midnight talks card 🌙' (giftcard-midnight.dim_600x400.png)\n- Pastel pink gift card with hearts, ribbon and bear stamp, labeled 'Always there for you card 💕' (giftcard-always.dim_600x400.png)\n- Pastel lavender gift card with ribbon and bear stamp, labeled 'Safe place card 🫶' (giftcard-safe.dim_600x400.png)\n- Special pastel gift card with glowing lavender flowers border and elegant text 'Tikli Master' (giftcard-tikli-master.dim_600x400.png)\n- Closed pastel gift box with ribbon bow, ready to open (gift-box-closed.dim_800x800.png)\n- Opened gift box with lid lifted revealing magical glow inside (gift-box-opened.dim_800x800.png)\n- Diverse flower bouquet with roses, tulips, daisies, and lavender flowers as centerpiece with dreamy sparkles (flower-bouquet-buffet.dim_1000x1000.png)\n- Kawaii teddy bear character presenting or holding a flower bouquet with happy expression (bear-presenting-flowers.dim_500x500.png)\n- Romantic photo frame with pastel pink and lavender borders and subtle heart decorations suitable for portrait photo (photo-frame-romantic.dim_800x1000.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-full-screen-animated-canvas-using-react-three-fiber-with-a-soft-pastel-pink-and-lavender-gradient-background-that-gently-shifts-colors-featuring-floating-hearts-sparkles-glowing-balloons-animated-blooming-flowers-love-particles-and-cute-teddy-bears-with-smooth-motion",
+      "title": "Create a full-screen animated canvas using React Three Fiber with a soft pastel pink and lavender gradient background that gently shifts colors, featuring floating hearts, sparkles, glowing balloons, animated blooming flowers, love particles, and cute teddy bears with smooth motion",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-cinematic-lighting-effects-with-gentle-bokeh-lights-scattered-across-the-scene-to-create-a-dreamy-magical-atmosphere",
+      "title": "Implement cinematic lighting effects with gentle bokeh lights scattered across the scene to create a dreamy, magical atmosphere",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-animated-glitter-text-saying-happy-18th-birthday-my-love-with-elegant-typography-smooth-wishing-effects-and-sparkle-animations-in-kawaii-style",
+      "title": "Display animated glitter text saying 'Happy 18th Birthday My Love 🎂✨' with elegant typography, smooth wishing effects, and sparkle animations in kawaii style",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-interactive-question-sequence-where-five-yes-no-questions-appear-one-by-one-with-cute-custom-response-buttons-1-do-you-know-you-are-my-favourite-person-with-options-yes-and-yes-obviously-2-will-you-stay-with-me-forever-with-yes-and-always-yes-3-do-you-know-how-special-you-are-to-me-with-yes-and-of-course-4-are-you-ready-for-unlimited-love-today-with-yes-and-100-yes-5-can-i-keep-annoying-you-forever-with-yes-and-yes-idiot",
+      "title": "Create an interactive question sequence where five yes/no questions appear one by one with cute custom response buttons: (1) 'Do you know you are my favourite person?' with options 'Yes' and 'Yes obviously', (2) 'Will you stay with me forever?' with 'Yes' and 'Always yes', (3) 'Do you know how special you are to me?' with 'Yes' and 'Of course', (4) 'Are you ready for unlimited love today?' with 'Yes' and '100% yes', (5) 'Can I keep annoying you forever?' with 'Yes' and 'Yes idiot 😚'",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-romantic-countdown-animation-transitioning-to-18-with-numbers-appearing-in-elegant-typography-and-particle-effects",
+      "title": "Implement a romantic countdown animation transitioning to 18, with numbers appearing in elegant typography and particle effects",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-animated-polaroid-photo-frames-that-slide-into-view-displaying-placeholder-romantic-memories-or-decorative-patterns",
+      "title": "Create animated polaroid photo frames that slide into view, displaying placeholder romantic memories or decorative patterns",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-animated-handwritten-love-notes-that-pop-into-view-with-cute-handwritten-style-font-and-subtle-animation-effects",
+      "title": "Add animated handwritten love notes that pop into view with cute handwritten-style font and subtle animation effects",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-cake-candle-blowing-animation-with-a-3d-or-illustrated-birthday-cake-animated-candle-flames-and-particle-effects-when-blown-out",
+      "title": "Create a cake candle blowing animation with a 3D or illustrated birthday cake, animated candle flames, and particle effects when 'blown out'",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-heart-explosion-transition-effect-with-hearts-bursting-outward-and-filling-the-screen-before-transitioning-to-the-final-scene",
+      "title": "Implement a heart explosion transition effect with hearts bursting outward and filling the screen before transitioning to the final scene",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-final-romantic-text-messages-you-are-my-safest-place-and-forever-yours-with-elegant-typography-and-gentle-animation-effects",
+      "title": "Display final romantic text messages 'You are my safest place ❤️' and 'Forever yours' with elegant typography and gentle animation effects",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-the-entire-animation-experience-to-flow-like-an-instagram-reel-with-vertical-orientation-smooth-scene-transitions-and-a-cohesive-ultra-cute-kawaii-aesthetic-with-soft-romantic-motion-graphics-throughout",
+      "title": "Design the entire animation experience to flow like an Instagram reel with vertical orientation, smooth scene transitions, and a cohesive ultra-cute kawaii aesthetic with soft romantic motion graphics throughout",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-teddy-bear-visuals-throughout-the-animation-with-the-kawaii-white-and-brown-bear-characters-from-the-uploaded-images-jpeg-maintaining-the-same-kawaii-art-style-with-round-shapes-simple-facial-features-and-soft-pastel-coloring",
+      "title": "Replace all teddy bear visuals throughout the animation with the kawaii white and brown bear characters from the uploaded images.jpeg, maintaining the same kawaii art style with round shapes, simple facial features, and soft pastel coloring",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-interactive-question-sequence-to-show-5-specific-questions-with-unique-animated-bear-reactions-after-each-answer-1-do-you-know-you-are-my-favourite-person-with-options-yes-and-yes-obviously-white-bear-throws-hearts-with-text-love-you-2-do-you-know-how-special-you-are-to-me-with-yes-and-of-course-white-bear-blushes-with-text-you-are-magic-3-are-you-ready-for-unlimited-love-today-with-yes-and-100-yes-white-bear-spins-surrounded-by-hearts-with-text-unlimited-love-4-can-i-keep-annoying-you-forever-with-yes-and-always-white-bear-laughs-with-bouncing-motion-and-text-approved-5-even-when-i-m-silly-or-annoying-will-you-still-stay-with-me-with-yes-and-always-white-bear-hugs-a-big-heart-with-text-stay-forever",
+      "title": "Update the interactive question sequence to show 5 specific questions with unique animated bear reactions after each answer: (1) 'Do you know you are my favourite person?' with options 'Yes' and 'Yes obviously' → white bear throws hearts with text 'Love you 💕', (2) 'Do you know how special you are to me?' with 'Yes' and 'Of course' → white bear blushes with text 'You are magic ✨', (3) 'Are you ready for unlimited love today?' with 'Yes' and '100% yes' → white bear spins surrounded by hearts with text 'Unlimited love 💞', (4) 'Can I keep annoying you forever?' with 'Yes' and 'Always 😚' → white bear laughs with bouncing motion and text 'Approved ❤️', (5) 'Even when I'm silly or annoying… will you still stay with me?' with 'Yes' and 'Always' → white bear hugs a big heart with text 'Stay forever 🤍'",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-animated-giftcards-section-that-appears-after-the-question-sequence-displaying-6-pastel-colored-gift-cards-that-slide-in-one-by-one-with-ribbons-sparkles-and-teddy-bear-stamps-1-unlimited-hugs-card-2-one-lifetime-annoyance-pass-3-midnight-talks-card-4-always-there-for-you-card-5-safe-place-card-and-6-a-special-tikli-master-card-with-a-glowing-lavender-flowers-border",
+      "title": "Create a new animated giftcards section that appears after the question sequence, displaying 6 pastel-colored gift cards that slide in one by one with ribbons, sparkles, and teddy bear stamps: (1) 'Unlimited hugs card 🤍', (2) 'One lifetime annoyance pass 😚', (3) 'Midnight talks card 🌙', (4) 'Always there for you card 💕', (5) 'Safe place card 🫶', and (6) a special 'Tikli Master' card with a glowing lavender flowers border",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-flower-bouquet-finale-scene-that-appears-after-the-giftcards-section-featuring-an-animated-gift-box-that-opens-to-reveal-a-magical-blooming-flower-buffet-with-every-kind-of-flower-floating-petals-dreamy-sparkles-with-lavender-flowers-as-the-permanent-centerpiece-accompanied-by-a-kawaii-teddy-bear-presenting-the-bouquet-and-text-displaying-aur-lijiye-bina-paiso-ka-gift",
+      "title": "Implement a flower bouquet finale scene that appears after the giftcards section, featuring an animated gift box that opens to reveal a magical blooming flower buffet with every kind of flower, floating petals, dreamy sparkles, with lavender flowers as the permanent centerpiece, accompanied by a kawaii teddy bear presenting the bouquet and text displaying 'Aur lijiye... bina paiso ka gift 🌸'",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-personal-photo-ending-scene-as-the-final-surprise-displaying-the-girl-s-photo-from-the-uploaded-screenshot-20250826-210145-2-png-with-the-text-tikla-hain-aap-overlaid-or-positioned-near-the-photo-styled-with-the-same-romantic-pastel-aesthetic",
+      "title": "Add a personal photo ending scene as the final surprise, displaying the girl's photo from the uploaded Screenshot_20250826-210145~2.png with the text 'tikla hain aap' overlaid or positioned near the photo, styled with the same romantic pastel aesthetic",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-animationorchestrator-component-to-sequence-all-scenes-in-the-correct-order-glitter-text-question-sequence-with-bear-reactions-countdown-polaroids-love-notes-cake-giftcards-section-flower-bouquet-finale-personal-photo-ending-heart-explosion-optional-final-transition-with-smooth-transitions-between-each-scene",
+      "title": "Update the AnimationOrchestrator component to sequence all scenes in the correct order: glitter text → question sequence with bear reactions → countdown → polaroids → love notes → cake → giftcards section → flower bouquet finale → personal photo ending → heart explosion (optional final transition), with smooth transitions between each scene",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-all-generated-images-kawaii-bears-giftcard-decorations-flower-bouquet-elements-personal-photo-as-static-assets-from-frontend-public-assets-generated-and-display-them-throughout-the-animation-using-standard-image-elements-or-textures",
+      "title": "Render all generated images (kawaii bears, giftcard decorations, flower bouquet elements, personal photo) as static assets from frontend/public/assets/generated and display them throughout the animation using standard image elements or textures",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Soft pastel animated background with pink and lavender theme, floating hearts, sparkles, glowing balloons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Interactive yes/no questions appearing one by one with cute response options",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Romantic scenes: countdown to 18, polaroid frames, handwritten notes, cake candle blowing, heart explosion transition",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Glitter text 'Happy 18th Birthday My Love', final texts 'You are my safest place' and 'Forever yours'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Decorative elements: teddy bears, bokeh lights, animated blooming flowers, love particles, elegant typography",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Ensure the animation displays generated background images, decorative elements like teddy bears and flowers, and any romantic scene visuals as static assets from frontend/public/assets/generated",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Implement kawaii white and brown bear characters from uploaded image appearing throughout animation with unique reactions (throwing hearts, blushing, spinning, laughing, hugging)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Update question sequence with 5 specific questions and unique bear animations after each answer: (1) Do you know you are my favourite person? → bear throws hearts, (2) Do you know how special you are to me? → bear blushes, (3) Are you ready for unlimited love today? → bear spins with hearts, (4) Can I keep annoying you forever? → bear laughs, (5) Even when I'm silly or annoying… will you still stay with me? → bear hugs big heart",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Create animated giftcards section with 6 pastel cards sliding in with ribbons and sparkles: Unlimited hugs card, One lifetime annoyance pass, Midnight talks card, Always there for you card, Safe place card, and special Tikli Master card with lavender flowers border",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Implement flower bouquet finale with gift box opening animation, magical blooming flower buffet with lavender centerpiece, and text 'Aur lijiye... bina paiso ka gift 🌸'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Add personal photo ending displaying girl's photo from uploaded image with text 'tikla hain aap' as final surprise scene",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Birthday Wish Animation",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Romantic Pink & Lavender Theme - Light Mode */
+    --background: oklch(0.98 0.02 330);
+    --foreground: oklch(0.25 0.02 330);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.25 0.02 330);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.25 0.02 330);
+    --primary: oklch(0.65 0.20 350);
+    --primary-foreground: oklch(0.98 0.02 350);
+    --secondary: oklch(0.70 0.15 290);
+    --secondary-foreground: oklch(0.98 0.02 290);
+    --muted: oklch(0.95 0.02 330);
+    --muted-foreground: oklch(0.50 0.02 330);
+    --accent: oklch(0.75 0.18 320);
+    --accent-foreground: oklch(0.98 0.02 320);
+    --destructive: oklch(0.55 0.22 25);
+    --destructive-foreground: oklch(0.98 0.02 25);
+    --border: oklch(0.90 0.02 330);
+    --input: oklch(0.90 0.02 330);
+    --ring: oklch(0.65 0.20 350);
+    --radius: 1rem;
+
+    /* Custom romantic colors */
+    --romantic-pink: oklch(0.65 0.20 350);
+    --romantic-pink-hover: oklch(0.60 0.20 350);
+    --romantic-lavender: oklch(0.70 0.15 290);
+    --romantic-lavender-hover: oklch(0.65 0.15 290);
+    --romantic-light: oklch(0.95 0.05 330);
+    --romantic-dark: oklch(0.30 0.05 330);
+  }
+
+  .dark {
+    /* Romantic Pink & Lavender Theme - Dark Mode */
+    --background: oklch(0.15 0.02 330);
+    --foreground: oklch(0.95 0.02 330);
+    --card: oklch(0.18 0.02 330);
+    --card-foreground: oklch(0.95 0.02 330);
+    --popover: oklch(0.18 0.02 330);
+    --popover-foreground: oklch(0.95 0.02 330);
+    --primary: oklch(0.70 0.20 350);
+    --primary-foreground: oklch(0.15 0.02 350);
+    --secondary: oklch(0.75 0.15 290);
+    --secondary-foreground: oklch(0.15 0.02 290);
+    --muted: oklch(0.25 0.02 330);
+    --muted-foreground: oklch(0.65 0.02 330);
+    --accent: oklch(0.80 0.18 320);
+    --accent-foreground: oklch(0.15 0.02 320);
+    --destructive: oklch(0.60 0.22 25);
+    --destructive-foreground: oklch(0.95 0.02 25);
+    --border: oklch(0.25 0.02 330);
+    --input: oklch(0.25 0.02 330);
+    --ring: oklch(0.70 0.20 350);
+
+    /* Custom romantic colors for dark mode */
+    --romantic-pink: oklch(0.70 0.20 350);
+    --romantic-pink-hover: oklch(0.65 0.20 350);
+    --romantic-lavender: oklch(0.75 0.15 290);
+    --romantic-lavender-hover: oklch(0.70 0.15 290);
+    --romantic-light: oklch(0.25 0.05 330);
+    --romantic-dark: oklch(0.90 0.05 330);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Kawaii text styling */
+  .kawaii-text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* Romantic colors */
+  .text-romantic-pink {
+    color: var(--romantic-pink);
+  }
+  .text-romantic-lavender {
+    color: var(--romantic-lavender);
+  }
+  .text-romantic-light {
+    color: var(--romantic-light);
+  }
+  .text-romantic-dark {
+    color: var(--romantic-dark);
+  }
+  .bg-romantic-pink {
+    background-color: var(--romantic-pink);
+  }
+  .bg-romantic-lavender {
+    background-color: var(--romantic-lavender);
+  }
+  .border-romantic-pink {
+    border-color: var(--romantic-pink);
+  }
+  .border-romantic-lavender {
+    border-color: var(--romantic-lavender);
+  }
+
+  /* Kawaii button styles */
+  .kawaii-button {
+    background-color: var(--romantic-pink);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  .kawaii-button:hover {
+    background-color: var(--romantic-pink-hover);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transform: scale(1.05);
+  }
+  
+  .kawaii-button-alt {
+    background-color: var(--romantic-lavender);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  .kawaii-button-alt:hover {
+    background-color: var(--romantic-lavender-hover);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transform: scale(1.05);
+  }
+
+  /* Question card animation */
+  .question-card {
+    animation: slideInUp 0.6s ease-out;
+  }
+
+  /* Final message styles */
+  .final-message {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .final-message-secondary {
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Custom Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--romantic-lavender), 0 0 40px var(--romantic-lavender);
+  }
+  50% {
+    box-shadow: 0 0 30px var(--romantic-lavender), 0 0 60px var(--romantic-lavender);
+  }
+}
+
+@keyframes throw-hearts {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes blush-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes spin-360 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes hug-scale {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+}
+
+@keyframes box-open {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-10deg);
+  }
+  100% {
+    transform: translateY(-30px) rotate(-15deg);
+  }
+}
+
+@keyframes bloom {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float-petal {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float-heart {
+  0% {
+    transform: translateY(100%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-10%) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-throw-hearts {
+  animation: throw-hearts 1.5s ease-in-out;
+}
+
+.animate-blush-pulse {
+  animation: blush-pulse 1.5s ease-in-out;
+}
+
+.animate-spin-360 {
+  animation: spin-360 1.5s ease-in-out;
+}
+
+.animate-hug-scale {
+  animation: hug-scale 1.5s ease-in-out;
+}
+
+.animate-box-open {
+  animation: box-open 1s ease-out forwards;
+}
+
+.animate-bloom {
+  animation: bloom 1.5s ease-out;
+}
+
+.animate-float-petal {
+  animation: float-petal 8s linear infinite;
+}
+
+.animate-float-heart {
+  animation: float-heart 6s linear infinite;
+}

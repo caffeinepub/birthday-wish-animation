@@ -1,0 +1,137 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-all-teddy-bear-visuals-throughout-the-animation-with-the-kawaii-white-and-brown-bear-characters-from-the-uploaded-images-jpeg-maintaining-the-same-kawaii-art-style-with-round-shapes-simple-facial-features-and-soft-pastel-coloring",
+      "featureTitle": "Replace all teddy bear visuals throughout the animation with the kawaii white and brown bear characters from the uploaded images.jpeg, maintaining the same kawaii art style with round shapes, simple facial features, and soft pastel coloring",
+      "files": [
+        "frontend/src/components/AnimatedCanvas.tsx",
+        "frontend/src/components/TeddyBear.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-interactive-question-sequence-to-show-5-specific-questions-with-unique-animated-bear-reactions-after-each-answer-1-do-you-know-you-are-my-favourite-person-with-options-yes-and-yes-obviously-white-bear-throws-hearts-with-text-love-you-2-do-you-know-how-special-you-are-to-me-with-yes-and-of-course-white-bear-blushes-with-text-you-are-magic-3-are-you-ready-for-unlimited-love-today-with-yes-and-100-yes-white-bear-spins-surrounded-by-hearts-with-text-unlimited-love-4-can-i-keep-annoying-you-forever-with-yes-and-always-white-bear-laughs-with-bouncing-motion-and-text-approved-5-even-when-i-m-silly-or-annoying-will-you-still-stay-with-me-with-yes-and-always-white-bear-hugs-a-big-heart-with-text-stay-forever",
+      "featureTitle": "Update the interactive question sequence to show 5 specific questions with unique animated bear reactions after each answer: (1) 'Do you know you are my favourite person?' with options 'Yes' and 'Yes obviously' → white bear throws hearts with text 'Love you 💕', (2) 'Do you know how special you are to me?' with 'Yes' and 'Of course' → white bear blushes with text 'You are magic ✨', (3) 'Are you ready for unlimited love today?' with 'Yes' and '100% yes' → white bear spins surrounded by hearts with text 'Unlimited love 💞', (4) 'Can I keep annoying you forever?' with 'Yes' and 'Always 😚' → white bear laughs with bouncing motion and text 'Approved ❤️', (5) 'Even when I'm silly or annoying… will you still stay with me?' with 'Yes' and 'Always' → white bear hugs a big heart with text 'Stay forever 🤍'",
+      "files": [
+        "frontend/src/components/BearReaction.tsx",
+        "frontend/src/components/QuestionSequence.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-new-animated-giftcards-section-that-appears-after-the-question-sequence-displaying-6-pastel-colored-gift-cards-that-slide-in-one-by-one-with-ribbons-sparkles-and-teddy-bear-stamps-1-unlimited-hugs-card-2-one-lifetime-annoyance-pass-3-midnight-talks-card-4-always-there-for-you-card-5-safe-place-card-and-6-a-special-tikli-master-card-with-a-glowing-lavender-flowers-border",
+      "featureTitle": "Create a new animated giftcards section that appears after the question sequence, displaying 6 pastel-colored gift cards that slide in one by one with ribbons, sparkles, and teddy bear stamps: (1) 'Unlimited hugs card 🤍', (2) 'One lifetime annoyance pass 😚', (3) 'Midnight talks card 🌙', (4) 'Always there for you card 💕', (5) 'Safe place card 🫶', and (6) a special 'Tikli Master' card with a glowing lavender flowers border",
+      "files": [
+        "frontend/src/components/GiftcardsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-flower-bouquet-finale-scene-that-appears-after-the-giftcards-section-featuring-an-animated-gift-box-that-opens-to-reveal-a-magical-blooming-flower-buffet-with-every-kind-of-flower-floating-petals-dreamy-sparkles-with-lavender-flowers-as-the-permanent-centerpiece-accompanied-by-a-kawaii-teddy-bear-presenting-the-bouquet-and-text-displaying-aur-lijiye-bina-paiso-ka-gift",
+      "featureTitle": "Implement a flower bouquet finale scene that appears after the giftcards section, featuring an animated gift box that opens to reveal a magical blooming flower buffet with every kind of flower, floating petals, dreamy sparkles, with lavender flowers as the permanent centerpiece, accompanied by a kawaii teddy bear presenting the bouquet and text displaying 'Aur lijiye... bina paiso ka gift 🌸'",
+      "files": [
+        "frontend/src/components/FlowerBouquetFinale.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-personal-photo-ending-scene-as-the-final-surprise-displaying-the-girl-s-photo-from-the-uploaded-screenshot-20250826-210145-2-png-with-the-text-tikla-hain-aap-overlaid-or-positioned-near-the-photo-styled-with-the-same-romantic-pastel-aesthetic",
+      "featureTitle": "Add a personal photo ending scene as the final surprise, displaying the girl's photo from the uploaded Screenshot_20250826-210145~2.png with the text 'tikla hain aap' overlaid or positioned near the photo, styled with the same romantic pastel aesthetic",
+      "files": [
+        "frontend/src/components/PersonalPhotoEnding.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-animationorchestrator-component-to-sequence-all-scenes-in-the-correct-order-glitter-text-question-sequence-with-bear-reactions-countdown-polaroids-love-notes-cake-giftcards-section-flower-bouquet-finale-personal-photo-ending-heart-explosion-optional-final-transition-with-smooth-transitions-between-each-scene",
+      "featureTitle": "Update the AnimationOrchestrator component to sequence all scenes in the correct order: glitter text → question sequence with bear reactions → countdown → polaroids → love notes → cake → giftcards section → flower bouquet finale → personal photo ending → heart explosion (optional final transition), with smooth transitions between each scene",
+      "files": [
+        "frontend/src/components/AnimationOrchestrator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-all-generated-images-kawaii-bears-giftcard-decorations-flower-bouquet-elements-personal-photo-as-static-assets-from-frontend-public-assets-generated-and-display-them-throughout-the-animation-using-standard-image-elements-or-textures",
+      "featureTitle": "Render all generated images (kawaii bears, giftcard decorations, flower bouquet elements, personal photo) as static assets from frontend/public/assets/generated and display them throughout the animation using standard image elements or textures",
+      "files": [
+        "frontend/src/components/BearReaction.tsx",
+        "frontend/src/components/FlowerBouquetFinale.tsx",
+        "frontend/src/components/GiftcardsSection.tsx",
+        "frontend/src/components/PersonalPhotoEnding.tsx",
+        "frontend/src/components/TeddyBear.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

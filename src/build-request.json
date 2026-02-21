@@ -1,0 +1,194 @@
+{
+  "kind": "build_request",
+  "title": "Create new birthday animation theme with kawaii bears, giftcards, flower bouquet, and personal photo ending",
+  "projectName": "Birthday Love Animation",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Replace all teddy bear visuals throughout the animation with the kawaii white and brown bear characters from the uploaded images.jpeg, maintaining the same kawaii art style with round shapes, simple facial features, and soft pastel coloring",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Use the kawaii white and brown bears from your first image as the main characters",
+          "Bears will appear with unique animations after each question"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All teddy bear components use the exact kawaii bear style from images.jpeg",
+        "Bears have round bodies, simple dot eyes, and soft expressions matching the reference image",
+        "Both white and brown bear variations are available for different scenes"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Update the interactive question sequence to show 5 specific questions with unique animated bear reactions after each answer: (1) 'Do you know you are my favourite person?' with options 'Yes' and 'Yes obviously' → white bear throws hearts with text 'Love you 💕', (2) 'Do you know how special you are to me?' with 'Yes' and 'Of course' → white bear blushes with text 'You are magic ✨', (3) 'Are you ready for unlimited love today?' with 'Yes' and '100% yes' → white bear spins surrounded by hearts with text 'Unlimited love 💞', (4) 'Can I keep annoying you forever?' with 'Yes' and 'Always 😚' → white bear laughs with bouncing motion and text 'Approved ❤️', (5) 'Even when I'm silly or annoying… will you still stay with me?' with 'Yes' and 'Always' → white bear hugs a big heart with text 'Stay forever 🤍'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Each question will have unique bear reactions",
+          "bear throws hearts 💕",
+          "bear blushes ✨",
+          "bear spins with hearts 💞",
+          "bear laughs ❤️",
+          "bear hugs a big heart 🤍"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Question sequence displays exactly 5 questions with the specified text and button options",
+        "After each answer selection, a kawaii white bear appears with a unique animation (throwing, blushing, spinning, laughing, hugging)",
+        "Each bear reaction includes the specified text message overlay ('Love you 💕', 'You are magic ✨', etc.)",
+        "Bear animations are smooth, kawaii-styled, and clearly distinct from each other",
+        "The sequence progresses automatically after each bear reaction completes"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Create a new animated giftcards section that appears after the question sequence, displaying 6 pastel-colored gift cards that slide in one by one with ribbons, sparkles, and teddy bear stamps: (1) 'Unlimited hugs card 🤍', (2) 'One lifetime annoyance pass 😚', (3) 'Midnight talks card 🌙', (4) 'Always there for you card 💕', (5) 'Safe place card 🫶', and (6) a special 'Tikli Master' card with a glowing lavender flowers border",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Animated pastel gift cards sliding in with ribbons and sparkles",
+          "Unlimited hugs card 🤍",
+          "One lifetime annoyance pass 😚",
+          "Midnight talks card 🌙",
+          "Always there for you card 💕",
+          "Safe place card 🫶",
+          "Special 'Tikli Master' card with lavender flowers border"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Giftcards section displays after the final question and bear reaction",
+        "6 cards appear sequentially with staggered slide-in animations",
+        "Each card has pastel pink/lavender styling with decorative ribbons and sparkle effects",
+        "Cards include small kawaii teddy bear stamp illustrations",
+        "The 'Tikli Master' card has a distinct glowing lavender flowers border design",
+        "All card text matches the specified messages exactly"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Implement a flower bouquet finale scene that appears after the giftcards section, featuring an animated gift box that opens to reveal a magical blooming flower buffet with every kind of flower, floating petals, dreamy sparkles, with lavender flowers as the permanent centerpiece, accompanied by a kawaii teddy bear presenting the bouquet and text displaying 'Aur lijiye... bina paiso ka gift 🌸'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Gift box opens with magical blooming animation, showing an entire flower buffet with lavender as the centerpiece",
+          "plus text 'Aur lijiye... bina paiso ka gift 🌸'",
+          "teddy bear presenting bouquet"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gift box appears closed initially with an opening animation (lid lifts up)",
+        "Multiple types of flowers bloom from the box in sequence with smooth animation",
+        "Lavender flowers are prominently featured and remain visible as the centerpiece",
+        "Petals float gently in the scene with sparkle particle effects",
+        "A kawaii teddy bear character appears presenting or holding the bouquet",
+        "Text 'Aur lijiye... bina paiso ka gift 🌸' displays with elegant typography"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Add a personal photo ending scene as the final surprise, displaying the girl's photo from the uploaded Screenshot_20250826-210145~2.png with the text 'tikla hain aap' overlaid or positioned near the photo, styled with the same romantic pastel aesthetic",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "The final scene will display the girl's photo from your second image with the text 'tikla hain aap' as the ultimate surprise",
+          "Personal Photo Ending"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The girl's photo from Screenshot_20250826-210145~2.png appears as the final scene",
+        "Photo displays with a romantic frame or border matching the pastel pink/lavender theme",
+        "Text 'tikla hain aap' appears with elegant typography, positioned aesthetically with the photo",
+        "Scene includes subtle sparkle or heart particle effects in the background",
+        "This is definitively the last scene in the animation sequence"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Update the AnimationOrchestrator component to sequence all scenes in the correct order: glitter text → question sequence with bear reactions → countdown → polaroids → love notes → cake → giftcards section → flower bouquet finale → personal photo ending → heart explosion (optional final transition), with smooth transitions between each scene",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Everything will flow with dreamy pink + lavender aesthetic, smooth Instagram reel-style transitions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All scenes appear in the specified sequential order",
+        "New giftcards, flower bouquet, and photo ending scenes are integrated into the orchestration logic",
+        "Each scene transition is smooth with appropriate timing (no abrupt cuts)",
+        "Total animation duration is reasonable for an Instagram reel-style experience",
+        "Scene progression can be tested end-to-end without errors"
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "text": "Render all generated images (kawaii bears, giftcard decorations, flower bouquet elements, personal photo) as static assets from frontend/public/assets/generated and display them throughout the animation using standard image elements or textures",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All generated images are stored in frontend/public/assets/generated",
+        "Components reference these static asset paths for displaying images",
+        "Images load correctly and display at appropriate sizes and positions",
+        "No backend involvement in image serving"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui",
+    "Maintain the single-actor backend architecture; keep backend/main.mo as a placeholder",
+    "Use only React, Tailwind CSS, Shadcn components, React Query, and React Three Fiber for the frontend",
+    "All animations must work client-side without backend data dependencies"
+  ],
+  "nonGoals": [
+    "Creating multiple separate birthday animation versions",
+    "Adding user authentication or data persistence features",
+    "Implementing video recording or download functionality",
+    "Adding audio or music playback",
+    "Creating admin controls or configuration interfaces"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Kawaii white bear character with round body, dot eyes, and soft expression throwing hearts animation frame (kawaii-white-bear-hearts.dim_400x400.png)",
+      "Kawaii white bear character blushing with pink cheeks and shy expression (kawaii-white-bear-blush.dim_400x400.png)",
+      "Kawaii white bear character spinning in a circle surrounded by floating hearts (kawaii-white-bear-spin.dim_400x400.png)",
+      "Kawaii white bear character laughing with open mouth and bouncing motion (kawaii-white-bear-laugh.dim_400x400.png)",
+      "Kawaii white bear character hugging a large pink or lavender heart with both arms (kawaii-white-bear-hug-heart.dim_400x400.png)",
+      "Kawaii brown bear character with same style as white bear for additional scenes (kawaii-brown-bear.dim_400x400.png)",
+      "Pastel pink gift card with decorative ribbon and small teddy bear stamp, labeled 'Unlimited hugs card 🤍' (giftcard-hugs.dim_600x400.png)",
+      "Pastel lavender gift card with ribbon and bear stamp, labeled 'One lifetime annoyance pass 😚' (giftcard-annoyance.dim_600x400.png)",
+      "Pastel blue gift card with moon decoration, ribbon and bear stamp, labeled 'Midnight talks card 🌙' (giftcard-midnight.dim_600x400.png)",
+      "Pastel pink gift card with hearts, ribbon and bear stamp, labeled 'Always there for you card 💕' (giftcard-always.dim_600x400.png)",
+      "Pastel lavender gift card with ribbon and bear stamp, labeled 'Safe place card 🫶' (giftcard-safe.dim_600x400.png)",
+      "Special pastel gift card with glowing lavender flowers border and elegant text 'Tikli Master' (giftcard-tikli-master.dim_600x400.png)",
+      "Closed pastel gift box with ribbon bow, ready to open (gift-box-closed.dim_800x800.png)",
+      "Opened gift box with lid lifted revealing magical glow inside (gift-box-opened.dim_800x800.png)",
+      "Diverse flower bouquet with roses, tulips, daisies, and lavender flowers as centerpiece with dreamy sparkles (flower-bouquet-buffet.dim_1000x1000.png)",
+      "Kawaii teddy bear character presenting or holding a flower bouquet with happy expression (bear-presenting-flowers.dim_500x500.png)",
+      "Romantic photo frame with pastel pink and lavender borders and subtle heart decorations suitable for portrait photo (photo-frame-romantic.dim_800x1000.png)"
+    ],
+    "edits": []
+  }
+}

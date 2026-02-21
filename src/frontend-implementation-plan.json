@@ -1,0 +1,167 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Create new birthday animation theme with kawaii bears, giftcards, flower bouquet, and personal photo ending",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Replace all teddy bear visuals with kawaii white and brown bear characters from images.jpeg",
+      "acceptanceCriteria": [
+        "All teddy bear components use the exact kawaii bear style from images.jpeg",
+        "Bears have round bodies, simple dot eyes, and soft expressions matching the reference image",
+        "Both white and brown bear variations are available for different scenes"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TeddyBear.tsx",
+          "operation": "modify",
+          "description": "Update component to accept a 'variant' prop ('white' or 'brown') and replace the existing teddy bear texture reference with paths to the generated kawaii bear images from frontend/public/assets/generated/kawaii-white-bear-hearts.dim_400x400.png and frontend/public/assets/generated/kawaii-brown-bear.dim_400x400.png based on the variant prop. Maintain the same Three.js plane geometry and bobbing animation while ensuring the kawaii art style (round shapes, simple facial features, soft pastel coloring) is preserved in the rendering."
+        },
+        {
+          "path": "frontend/src/components/AnimatedCanvas.tsx",
+          "operation": "modify",
+          "description": "Update TeddyBear component instances to use the new 'variant' prop, distributing white and brown bears throughout the 3D scene. Ensure bears maintain their floating positions and animations while displaying the kawaii style from the generated images."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Update interactive question sequence with 5 specific questions and unique animated kawaii bear reactions",
+      "acceptanceCriteria": [
+        "Question sequence displays exactly 5 questions with the specified text and button options",
+        "After each answer selection, a kawaii white bear appears with a unique animation (throwing, blushing, spinning, laughing, hugging)",
+        "Each bear reaction includes the specified text message overlay ('Love you 💕', 'You are magic ✨', etc.)",
+        "Bear animations are smooth, kawaii-styled, and clearly distinct from each other",
+        "The sequence progresses automatically after each bear reaction completes"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QuestionSequence.tsx",
+          "operation": "modify",
+          "description": "Replace the current question array with exactly 5 new questions: (1) 'Do you know you are my favourite person?' with options 'Yes' and 'Yes obviously', (2) 'Do you know how special you are to me?' with 'Yes' and 'Of course', (3) 'Are you ready for unlimited love today?' with 'Yes' and '100% yes', (4) 'Can I keep annoying you forever?' with 'Yes' and 'Always 😚', (5) 'Even when I'm silly or annoying… will you still stay with me?' with 'Yes' and 'Always'. Add state management to trigger bear reaction animations after each answer is selected, with a delay before progressing to the next question."
+        },
+        {
+          "path": "frontend/src/components/BearReaction.tsx",
+          "operation": "create",
+          "description": "Create a new component that displays animated kawaii white bear reactions based on a 'reactionType' prop ('hearts', 'blush', 'spin', 'laugh', 'hug'). For each reaction type, render the corresponding generated image: frontend/public/assets/generated/kawaii-white-bear-hearts.dim_400x400.png for 'hearts', frontend/public/assets/generated/kawaii-white-bear-blush.dim_400x400.png for 'blush', frontend/public/assets/generated/kawaii-white-bear-spin.dim_400x400.png for 'spin', frontend/public/assets/generated/kawaii-white-bear-laugh.dim_400x400.png for 'laugh', and frontend/public/assets/generated/kawaii-white-bear-hug-heart.dim_400x400.png for 'hug'. Add CSS animations for throwing (translateY with spring), blushing (scale pulse), spinning (360deg rotation), laughing (bounce), and hugging (scale + slight rotate). Include a text overlay prop to display messages like 'Love you 💕', 'You are magic ✨', 'Unlimited love 💞', 'Approved ❤️', and 'Stay forever 🤍'. Component should auto-hide after 2-3 seconds to allow sequence progression."
+        },
+        {
+          "path": "frontend/src/components/QuestionCard.tsx",
+          "operation": "modify",
+          "description": "Add callback prop 'onAnswerComplete' to notify parent when answer animation finishes, enabling coordinated timing with bear reactions. Maintain existing scale animation and visual styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Create animated giftcards section with 6 pastel cards including special 'Tikli Master' card",
+      "acceptanceCriteria": [
+        "Giftcards section displays after the final question and bear reaction",
+        "6 cards appear sequentially with staggered slide-in animations",
+        "Each card has pastel pink/lavender styling with decorative ribbons and sparkle effects",
+        "Cards include small kawaii teddy bear stamp illustrations",
+        "The 'Tikli Master' card has a distinct glowing lavender flowers border design",
+        "All card text matches the specified messages exactly"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/GiftcardsSection.tsx",
+          "operation": "create",
+          "description": "Create a component that displays 6 gift cards in a responsive grid layout (2x3 or 3x2 depending on screen size). Each card should render its corresponding generated image as a background: frontend/public/assets/generated/giftcard-hugs.dim_600x400.png for 'Unlimited hugs card 🤍', frontend/public/assets/generated/giftcard-annoyance.dim_600x400.png for 'One lifetime annoyance pass 😚', frontend/public/assets/generated/giftcard-midnight.dim_600x400.png for 'Midnight talks card 🌙', frontend/public/assets/generated/giftcard-always.dim_600x400.png for 'Always there for you card 💕', frontend/public/assets/generated/giftcard-safe.dim_600x400.png for 'Safe place card 🫶', and frontend/public/assets/generated/giftcard-tikli-master.dim_600x400.png for the special 'Tikli Master' card. Implement staggered slide-in animations with 200ms delays between cards, adding sparkle particle effects around each card. The component should accept an 'onComplete' callback that fires when all cards have fully appeared."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Implement flower bouquet finale scene with animated gift box and magical blooming flowers",
+      "acceptanceCriteria": [
+        "Gift box appears closed initially with an opening animation (lid lifts up)",
+        "Multiple types of flowers bloom from the box in sequence with smooth animation",
+        "Lavender flowers are prominently featured and remain visible as the centerpiece",
+        "Petals float gently in the scene with sparkle particle effects",
+        "A kawaii teddy bear character appears presenting or holding the bouquet",
+        "Text 'Aur lijiye... bina paiso ka gift 🌸' displays with elegant typography"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FlowerBouquetFinale.tsx",
+          "operation": "create",
+          "description": "Create a component that orchestrates the flower bouquet reveal sequence. Start by displaying the closed gift box using frontend/public/assets/generated/gift-box-closed.dim_800x800.png. After 1 second, animate the box opening by transitioning to frontend/public/assets/generated/gift-box-opened.dim_800x800.png with a lid-lifting CSS animation (translateY and rotate). Then reveal the flower bouquet using frontend/public/assets/generated/flower-bouquet-buffet.dim_1000x1000.png with a scale and fade-in animation. Add the kawaii bear presenting flowers using frontend/public/assets/generated/bear-presenting-flowers.dim_500x500.png positioned to the side of the bouquet. Include floating petal particle effects using existing SparkleParticles component styled as petals. Display the text 'Aur lijiye... bina paiso ka gift 🌸' using Dancing Script font with fade-in animation. Component should accept an 'onComplete' callback for sequence progression."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Add personal photo ending scene with romantic frame and 'tikla hain aap' text",
+      "acceptanceCriteria": [
+        "The girl's photo from Screenshot_20250826-210145~2.png appears as the final scene",
+        "Photo displays with a romantic frame or border matching the pastel pink/lavender theme",
+        "Text 'tikla hain aap' appears with elegant typography, positioned aesthetically with the photo",
+        "Scene includes subtle sparkle or heart particle effects in the background",
+        "This is definitively the last scene in the animation sequence"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/PersonalPhotoEnding.tsx",
+          "operation": "create",
+          "description": "Create the final scene component that displays the personal photo. Render the photo from frontend/public/assets/Screenshot_20250826-210145~2.png within a romantic frame overlay using frontend/public/assets/generated/photo-frame-romantic.dim_800x1000.png. Position the text 'tikla hain aap' below or overlaid on the photo using Pacifico or Dancing Script font with pastel pink/lavender gradient. Add subtle sparkle effects using the existing SparkleParticles component and floating heart particles in the background. Implement a gentle fade-in and scale animation for the entire scene. Component should accept an 'onComplete' callback that fires after 5 seconds."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Update AnimationOrchestrator to sequence all scenes including new giftcards, flower bouquet, and photo ending",
+      "acceptanceCriteria": [
+        "All scenes appear in the specified sequential order",
+        "New giftcards, flower bouquet, and photo ending scenes are integrated into the orchestration logic",
+        "Each scene transition is smooth with appropriate timing (no abrupt cuts)",
+        "Total animation duration is reasonable for an Instagram reel-style experience",
+        "Scene progression can be tested end-to-end without errors"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnimationOrchestrator.tsx",
+          "operation": "modify",
+          "description": "Update the scene orchestration state machine to include the new sequence: glitter text → question sequence (with bear reactions integrated) → countdown → polaroids → love notes → cake → giftcards section → flower bouquet finale → personal photo ending → heart explosion (optional final transition). Import and render the new GiftcardsSection, FlowerBouquetFinale, and PersonalPhotoEnding components. Update timing logic to ensure smooth transitions between each scene using the onComplete callbacks from each component. Adjust total duration calculations and scene indices to accommodate the expanded sequence. Ensure BearReaction components are triggered at appropriate moments during the question sequence without breaking the flow."
+        }
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "summary": "Render all generated images as static assets throughout the animation",
+      "acceptanceCriteria": [
+        "All generated images are stored in frontend/public/assets/generated",
+        "Components reference these static asset paths for displaying images",
+        "Images load correctly and display at appropriate sizes and positions",
+        "No backend involvement in image serving"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TeddyBear.tsx",
+          "operation": "modify",
+          "description": "Ensure texture loading uses the generated kawaii bear image paths from frontend/public/assets/generated/ with correct dimension suffixes. Verify images load properly in the Three.js texture loader."
+        },
+        {
+          "path": "frontend/src/components/BearReaction.tsx",
+          "operation": "modify",
+          "description": "Verify all five bear reaction images (kawaii-white-bear-hearts.dim_400x400.png, kawaii-white-bear-blush.dim_400x400.png, kawaii-white-bear-spin.dim_400x400.png, kawaii-white-bear-laugh.dim_400x400.png, kawaii-white-bear-hug-heart.dim_400x400.png) are correctly referenced using their full workspace paths from frontend/public/assets/generated/."
+        },
+        {
+          "path": "frontend/src/components/GiftcardsSection.tsx",
+          "operation": "modify",
+          "description": "Verify all six giftcard images (giftcard-hugs.dim_600x400.png, giftcard-annoyance.dim_600x400.png, giftcard-midnight.dim_600x400.png, giftcard-always.dim_600x400.png, giftcard-safe.dim_600x400.png, giftcard-tikli-master.dim_600x400.png) are correctly referenced from frontend/public/assets/generated/ and render as card backgrounds or overlays."
+        },
+        {
+          "path": "frontend/src/components/FlowerBouquetFinale.tsx",
+          "operation": "modify",
+          "description": "Verify gift box images (gift-box-closed.dim_800x800.png, gift-box-opened.dim_800x800.png), flower bouquet (flower-bouquet-buffet.dim_1000x1000.png), and bear presenting flowers (bear-presenting-flowers.dim_500x500.png) are correctly referenced from frontend/public/assets/generated/ and display at appropriate sizes."
+        },
+        {
+          "path": "frontend/src/components/PersonalPhotoEnding.tsx",
+          "operation": "modify",
+          "description": "Verify the personal photo (frontend/public/assets/Screenshot_20250826-210145~2.png) and romantic frame (frontend/public/assets/generated/photo-frame-romantic.dim_800x1000.png) are correctly loaded and composited together with proper sizing and positioning."
+        }
+      ]
+    }
+  ]
+}
